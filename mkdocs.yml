@@ -1,0 +1,81 @@
+site_name: CEG East London DataBase Documentation
+copyright: |
+  &copy; 2024 <a href="https://www.qmul.ac.uk/ceg/" target="_blank" rel="noopener">Clinical Effectiveness Group</a>
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes  # Needed for an overview
+    - navigation.instant
+    - navigation.instant.progress
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: qmul # default # light mode
+      primary: custom # indigo # header, sidebar, text links +
+      accent: custom # purple # hovered links, buttons, scroll bars
+  font:
+    text: Source Sans 3
+    code: Source Code Pro
+  logo: img/Logos/CEG_logo_white3.png
+  favicon: img/Logos/CEG_logo_sq.png
+
+watch:
+  - overrides
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - search
+  - awesome-pages
+  - pub-obsidian:
+      obsidian_dir: .obsidian
+      backlinks:
+        enabled: true
+      callouts:
+        enabled: true
+        indentation: spaces
+      comments:
+        enabled: true
+        inject_as_html: false
+      links:
+        wikilinks_enabled: true
+        #img_lazy: true
+
+#- pub-meta:
+      #dir_meta_file: README.md
+      #overview:
+        #enable: true
+        #default: auto
+        #key_name: slug
+      #publish:
+        #search_in_hidden: false
+        #search_in_draft: false
+        #file_default: true
+        #file_warn_on_missing: true
+        #dir_default: published
+        #dir_warn_on_missing: false
+        #key_name: publish     
+      #redirect:
+        #enable: true
+        #mode: title
+        #warn_on_missing: true
+        #key_name: slug
+      #redirect:
+        #enable: true
+        #mode: title
+        #warn_on_missing: true
+        #key_name: slug
+      #title:
+        #key_name: title
+
