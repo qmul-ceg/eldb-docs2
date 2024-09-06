@@ -18,6 +18,6 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install pip install mkdocs-publisher
-      - run: pip install mkdocs-awesome-pages-plugin
+      - run: pip3 install pip install mkdocs-publisher
+      - run: pip3 install mkdocs-awesome-pages-plugin
       - run: mkdocs gh-deploy --force
